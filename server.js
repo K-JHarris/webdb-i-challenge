@@ -6,7 +6,7 @@ const server = express();
 server.use(express.json());
 
 server.get('/', (req, res) => {
-    res.send(`<h2>My first database!</h2>`)
+    res.status(200).json(`Hello There!`)
 });
 
 server.get('/api/accounts', async (req, res) => {
